@@ -8,6 +8,7 @@ RStudio
 ## Topological Score (TopS)
 
 The code for this program is available at https://github.com/WashburnLab/Topological-score-TopS-.
+
 The paper describing this program can be found here: 
 
 ### Installation
