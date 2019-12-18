@@ -4,7 +4,7 @@ How-to tutorials to run proteomic software programs.
 ## Table of Contents
 [Software](#software)
 
-[Topological Score](#Topological-Score-(TopS)
+[Topological Score](#Topological-Score-(TopS))
 
 ## Software
 
