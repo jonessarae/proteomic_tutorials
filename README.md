@@ -1,5 +1,9 @@
 # proteomic_tutorials
-how-to tutorials to run proteomic software programs
+How-to tutorials to run proteomic software programs.
+
+## Table of Contents
+[Software](#software)
+[Topological Score](#Topological-Score-(TopS)
 
 ## Software
 
