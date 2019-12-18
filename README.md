@@ -16,7 +16,7 @@ The paper describing this program can be found here:
 To download the program, use the following command:
 <pre>
 git clone https://github.com/WashburnLab/Topological-score-TopS-.git
-<\pre>
+</pre>
 
 ### Prepare input
 
@@ -46,22 +46,22 @@ install.packages(“devtools”)
 install.packages(“gplots”)
 install.packages(“gridExtra”)  
 install.packages(“shiny”)          
-<\pre>
+</pre>
 
 __Load the library *shiny*__ 
 <pre>
 library(shiny)
-<\pre>
+</pre>
 
 __Set your working directory to the TopS folder__
 <pre>
 setwd("C:/Users/jonesse3/Desktop/Joe_proteomic/TopS")
-<\pre>
+</pre>
 
 __Run the program__
 <pre>
 runApp()
-<\pre>
+</pre>
 
 ### Save the results
 In the TopS folder, the scores can be found in a file called *output_file.txt*. 
