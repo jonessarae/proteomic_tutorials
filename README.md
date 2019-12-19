@@ -2,11 +2,10 @@
 How-to tutorials to run proteomic software programs.
 
 ## Table of Contents
-[Software](#software)
-
-[Topological Score](#Topological-Score-(TopS))
-
-[SAINTq](#SAINTq)
+* [Software](#software)
+* [Topological Score](#Topological-Score-(TopS))
+* [SAINTq](#SAINTq)
+* [Proteus](#Proteus)
 
 ## Software
 
@@ -176,5 +175,5 @@ Since *scores_list* files representing each timepoint for one condition (ex. LPS
 Paste the original proteins, prey proteins, AvgP, and BFDR for each timepoint in their respective columns. To the right of these columns is another set of columns pre-filled with formulas that will match each prey protein to the original protein. Anything that is missing will have a AvgP of 0 and a BFDR of 1. 
 
 
-
+## Proteus
 
