@@ -102,7 +102,7 @@ SAINTq is a tool that uses a probabilistic method for scoring bait‐prey intera
 
 The SAINTq program can be found at this website, https://sourceforge.net/projects/saint-apms/files/.
 
-The paper describing the program can be found at https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201500499 width=500.
+The paper describing the program can be found at https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201500499.
 
 ### Installation
 
