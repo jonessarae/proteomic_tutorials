@@ -125,7 +125,7 @@ compress_n_ctrl=100
 
 ## test bait replicate selection rules
 compress_n_rep=100
-<\pre>
+</pre>
 
 
 
