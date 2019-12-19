@@ -31,12 +31,13 @@ Since TopS can take averages, use the output file from process_maxquant.py calle
 
 To obtain the scores, the *input_file.csv* can contain only one stimulant/timepoint at a time. 
 
-The input_file.csv should have three columns:
+The input_file.csv must have three columns:
 1. Protein ID
 2. Control average
 3. Experiment average
 
 Example:
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/csv.PNG">
 
 Make sure to save the file as a CSV (Comma delimited) when using excel.
 
