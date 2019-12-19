@@ -177,6 +177,11 @@ Paste the original proteins, prey proteins, AvgP, and BFDR for each timepoint in
 
 ## Proteus
 
+https://www.biorxiv.org/content/10.1101/416511v2
+
+https://github.com/bartongroup/Proteus
+http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html
+
 ### Installation
 
 Open RStudio and run the following commands to install Proteus and its dependencies:
