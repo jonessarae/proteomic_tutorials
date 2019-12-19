@@ -52,10 +52,10 @@ __Open RStudio.__
 If this is your first time running TopS, install the following packages in RStudio:
 
 <pre>
-install.packages(“devtools”)
-install.packages(“gplots”)
-install.packages(“gridExtra”)  
-install.packages(“shiny”)          
+install.packages("devtools")
+install.packages("gplots")
+install.packages("gridExtra")  
+install.packages("shiny")          
 </pre>
 
 __Load the library *shiny*__ 
@@ -65,7 +65,7 @@ library(shiny)
 
 __Set your working directory to the TopS folder__
 <pre>
-setwd("C:/Users/username/Topological-score-TopS-")
+setwd("C:/Users/jonesse3/Topological-score-TopS-")
 </pre>
 
 __Run the program__
@@ -73,12 +73,17 @@ __Run the program__
 runApp()
 </pre>
 
+A user interface will appear, but you do not need it to get the output. 
+
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_gui.PNG">
+
+
 ### Save the results
 In the TopS folder, the scores can be found in a file called *output_file.txt*. 
 
 Save the results to a new file before running the app again.
 
 ### Stop the app
-Stop the app to rerun the program again with runApp() on a new *input_file.csv*.
+Stop the app in RStudio to rerun the program again with runApp() on a new *input_file.csv*.
 
-
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/stop.PNG">
