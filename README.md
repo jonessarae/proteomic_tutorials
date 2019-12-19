@@ -38,7 +38,7 @@ The input_file.csv must have three columns:
 
 Example:
 
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_input.PNG" height=100 width=100>
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_input.PNG" height=300 width=300>
 
 Make sure to save the file as a CSV (Comma delimited) when using excel.
 
