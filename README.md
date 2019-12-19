@@ -93,3 +93,41 @@ Save the results to a new file before running the app again.
 Stop the app by pressing the Stop button in RStudio to rerun the program again with runApp() on a new *input_file.csv*.
 
 <img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/stop.PNG" height=500, width=700>
+
+## SAINTq
+
+### Installation
+
+Download SAINTq from the following website: https://sourceforge.net/projects/saint-apms/files/.
+
+### Prepare input files
+
+#### Parameter file
+
+<pre>
+### SAINTq parameter file
+## use # to mark a line as comment
+
+## normalize control intensities
+normalize_control=true
+
+## name of file with intensities
+input_filename=PolyIC_120.txt
+
+## valid: protein, peptide, fragment
+input_level=protein
+
+## column names
+protein_colname=Protein
+
+## control bait selection rules
+compress_n_ctrl=100
+
+## test bait replicate selection rules
+compress_n_rep=100
+<\pre>
+
+
+
+
+
