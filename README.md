@@ -98,9 +98,12 @@ Stop the app by pressing the Stop button in RStudio to rerun the program again w
 
 ## SAINTq
 
-### Installation
+SAINTq is a tool that uses a probabilistic method for scoring bait‐prey interactions against negative controls in affinity purification – mass spectrometry experiments.
 
-The SAINTq program can be found at this website: https://sourceforge.net/projects/saint-apms/files/.
+The SAINTq program can be found at this website, https://sourceforge.net/projects/saint-apms/files/.
+The paper describing the program can be found at https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201500499.
+
+### Installation
 
 Click on the green button to download the latest version of the executable. 
 
@@ -164,7 +167,7 @@ Save this file as a Text (Tab delimited) in excel.
 ./saintq_v0.0.4.exe param_prot_level.txt
 </pre>
 
-The output file is a tab-separated value (TSV) file that starts with *scores_list*. 
+The output file is a tab-separated value (TSV) file that starts with *scores_list*. It contains the probability score, AvgP, and the Bayesian false discovery rate, BFDR, for each bait-prey interaction. 
 
 
 
