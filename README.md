@@ -101,6 +101,7 @@ Stop the app by pressing the Stop button in RStudio to rerun the program again w
 SAINTq is a tool that uses a probabilistic method for scoring bait‐prey interactions against negative controls in affinity purification – mass spectrometry experiments.
 
 The SAINTq program can be found at this website, https://sourceforge.net/projects/saint-apms/files/.
+
 The paper describing the program can be found at https://onlinelibrary.wiley.com/doi/full/10.1002/pmic.201500499.
 
 ### Installation
