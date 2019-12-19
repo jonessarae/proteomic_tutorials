@@ -14,7 +14,7 @@ RStudio
 
 The code for this program is available at https://github.com/WashburnLab/Topological-score-TopS-.
 
-The paper describing this program can be found here: 
+The paper describing this program can be found here: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6408525/.
 
 ### Installation
 
@@ -65,7 +65,7 @@ library(shiny)
 
 __Set your working directory to the TopS folder__
 <pre>
-setwd("C:/Users/jonesse3/Desktop/Joe_proteomic/TopS")
+setwd("C:/Users/username/Topological-score-TopS-")
 </pre>
 
 __Run the program__
