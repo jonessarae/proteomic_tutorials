@@ -82,7 +82,7 @@ A user interface will appear, but you do not need it to get the output.
 
 Image of user interface:
 
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_gui.PNG" height=300, width=300>
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_gui.PNG" height=400, width=300>
 
 
 ### Save the results
