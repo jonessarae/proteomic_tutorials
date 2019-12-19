@@ -8,13 +8,18 @@ How-to tutorials to run proteomic software programs.
 
 ## Software
 
-RStudio
+You will need RStudio to run the following:
+
+* Topological Score
+* Proteus
 
 ## Topological Score (TopS)
 
+The purpose of this tool is to score protein interactions.
+
 The code for this program is available at https://github.com/WashburnLab/Topological-score-TopS-.
 
-The paper describing this program can be found here: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6408525/.
+The paper describing this program can be obtained at https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6408525/.
 
 ### Installation
 
@@ -41,7 +46,6 @@ Example:
 <img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_input.PNG" height=300 width=300>
 
 Make sure to save the file as a CSV (Comma delimited) when using excel.
-
 
 <img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/csv.PNG">
 
