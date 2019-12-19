@@ -170,6 +170,10 @@ Save this file as a Text (Tab delimited) in excel.
 
 The output file is a tab-separated value (TSV) file that starts with *scores_list*. It contains the probability score, AvgP, and the Bayesian false discovery rate, BFDR, for each bait-prey interaction. 
 
+### Post-processing
+Since *scores_list* files representing each timepoint for one condition (ex. LPS) don't include all the proteins in the original input file, *saintq_scores_formulas.xlsx* is included in the *example_files* folder. 
+
+Paste the original proteins, prey proteins, AvgP, and BFDR for each timepoint in their respective columns. To the right of these columns is another set of columns pre-filled with formulas that will match each prey protein to the original protein. Anything that is missing will have a AvgP of 0 and a BFDR of 1. 
 
 
 
