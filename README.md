@@ -108,7 +108,7 @@ The paper describing the program can be found at https://onlinelibrary.wiley.com
 
 Click on the green button to download the latest version of the executable. 
 
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/download_saintq.PNG" height=300 width=300>
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/download_saintq.PNG" height=300 width=500>
 
 ### Prepare input files
 
