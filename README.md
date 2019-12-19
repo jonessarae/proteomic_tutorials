@@ -86,4 +86,4 @@ Save the results to a new file before running the app again.
 ### Stop the app
 Stop the app in RStudio to rerun the program again with runApp() on a new *input_file.csv*.
 
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/stop.PNG" height=300, width=500>
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/stop.PNG" height=600, width=700>
