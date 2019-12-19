@@ -102,6 +102,8 @@ Download SAINTq from the following website: https://sourceforge.net/projects/sai
 
 ### Prepare input files
 
+There are two input files that is used by SAINTq. The first is a table of intensity measurements, and the second is a parameter file for the input data information and optional parameters for inclusion criteria in scoring.
+
 #### Parameter file
 
 <pre>
@@ -127,7 +129,10 @@ compress_n_ctrl=100
 compress_n_rep=100
 </pre>
 
-The only parameter you will need to change in the parameter file is *input_filename*. Everything else can be kept as is. 
+The only parameter you will need to change in the parameter file is *input_filename*. Everything else can be kept as is.
+An example of the parameter file, *param_prot_level.txt*, included in the folder, *sample_files*. 
+
+
 
 
 
