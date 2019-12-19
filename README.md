@@ -75,7 +75,7 @@ runApp()
 
 A user interface will appear, but you do not need it to get the output. 
 
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_gui.PNG">
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_gui.PNG" height=300, width=300>
 
 
 ### Save the results
@@ -86,4 +86,4 @@ Save the results to a new file before running the app again.
 ### Stop the app
 Stop the app in RStudio to rerun the program again with runApp() on a new *input_file.csv*.
 
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/stop.PNG">
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/stop.PNG" height=300, width=300>
