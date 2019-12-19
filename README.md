@@ -6,6 +6,8 @@ How-to tutorials to run proteomic software programs.
 
 [Topological Score](#Topological-Score-(TopS))
 
+[SAINTq](#SAINTq)
+
 ## Software
 
 You will need RStudio to run the following:
@@ -99,9 +101,10 @@ Stop the app by pressing the Stop button in RStudio to rerun the program again w
 ### Installation
 
 The SAINTq program can be found at this website: https://sourceforge.net/projects/saint-apms/files/.
+
 Click on the green button to download the latest version of the executable. 
 
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/download_saintq.PNG">
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/download_saintq.PNG" height=300 width=300>
 
 ### Prepare input files
 
@@ -139,17 +142,21 @@ An example of the parameter file, *param_prot_level.txt*, is included in the fol
 
 #### Intensity table file
 
-You will need to create an intensity table file for each stimulant/timepoint.  Use the output file from process_maxquant.py called *all_norm.xlsx*. This file contains the intensity values for each replicate in the control and experimental groups. Copy the pertinent columns as well as the protein ID column, "Majority protein IDs" to a new excel file.  
+You will need to create an intensity table file for each stimulant/timepoint.  Use the output file from process_maxquant.py called *all_norm.xlsx*. This file contains the intensity values for each replicate in the control and experimental groups. Copy the pertinent columns as well as the protein ID column, "Majority protein IDs", to a new excel file.  
 
-The first three lines must describe the bait and experimental information as shown in the example below. 
+The first three lines in this excel file must describe the bait and experimental information as shown in the example below. 
 
 <img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/saintq_input.PNG">
 
 The first line indicates whether each bait is a test protein (T) or control (C). 
-The second line indicates the bait name. 
+
+The second line indicates the bait name.
+
 The third line indicates the bait replicate IP names. Note that "Majority protein IDs" was changed to "Protein" to match the parameter *protein_colname* in the parameter input file. 
 
 Save this file as a Text (Tab delimited) in excel. 
+
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/file_save.PNG">
 
 ### Run the program
 
