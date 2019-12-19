@@ -37,9 +37,12 @@ The input_file.csv must have three columns:
 3. Experiment average
 
 Example:
-<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/csv.PNG">
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/tops_input>
 
 Make sure to save the file as a CSV (Comma delimited) when using excel.
+
+
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/csv.PNG">
 
 ### Run tool
 
