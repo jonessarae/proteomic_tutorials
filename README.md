@@ -177,3 +177,14 @@ Paste the original proteins, prey proteins, AvgP, and BFDR for each timepoint in
 
 ## Proteus
 
+### Installation
+
+Open RStudio and run the following commands to install Proteus and its dependencies:
+
+<pre>
+install.packages("BiocManager")
+BiocManager::install()
+BiocManager::install("limma")
+install.packages("devtools")
+devtools::install_github("bartongroup/Proteus", build_opts= c("--no-resave-data", "--no-manual"), build_vignettes=FALSE)
+</pre>
