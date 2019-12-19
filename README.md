@@ -127,6 +127,9 @@ compress_n_ctrl=100
 compress_n_rep=100
 </pre>
 
+The only parameter you will need to change in the parameter file is *input_filename*. Everything else can be kept as is. 
+
+
 
 
 
