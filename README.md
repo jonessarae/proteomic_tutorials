@@ -84,6 +84,6 @@ In the TopS folder, the scores can be found in a file called *output_file.txt*.
 Save the results to a new file before running the app again.
 
 ### Stop the app
-Stop the app in RStudio to rerun the program again with runApp() on a new *input_file.csv*.
+Stop the app by pressing the Stop button in RStudio to rerun the program again with runApp() on a new *input_file.csv*.
 
 <img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/stop.PNG" height=500, width=700>
