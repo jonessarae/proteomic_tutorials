@@ -212,13 +212,13 @@ Using excel, we can add columns for "Reverse" and "Potential contaminant" as sho
 
 <img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/proteus_input.PNG">
 
-*Note: Sort the column "Majority protein IDs" to prevent misalignment of the intensity data when using Proteus' interactive tools such as plotVolcano_life.*
+*Note: Sort the column "Majority protein IDs" to prevent misalignment of the intensity data when using Proteus' interactive tools such as plotVolcano_live.*
 
 Save the file in the Text (Tab delimited) format in excel.
 
 #### Metadata file
 
-A metadata file describing the design of the experiment is also needed. It should be like the example below:
+A metadata file describing the design of the experiment is also needed. It should look like the example below:
 
 <img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/proteus_meta.PNG">
 
@@ -233,12 +233,12 @@ An example of the metadata file, *PolyIC_meta.txt*, is included in the folder, *
 library(proteus)
 </pre>
 
-#### Read in meta file
+#### Read in metadata file
 
 <pre>
-# path to meta file
+# path to metadata file
 metadataFile <- "LPS_meta.txt"
-# read in meta file
+# read in metadata file
 meta <- read.delim(metadataFile, header=TRUE, sep="\t")
 # create list with names corresponding to sample names in the intensity file
 new_measure_cols <- setNames(paste("",meta$sample,"",sep=""),meta$sample)
