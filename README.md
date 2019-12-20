@@ -239,7 +239,7 @@ write.table(L_all, file="LPS_proteus_stats.txt",sep="\t", row.names=TRUE)
 
 #### Other useful commands for analysis
 
-For more information on others commands and example output, please refer to this vignette: [Using proteus R package: label-free data] (http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html)
+For more information on others commands and example output, please refer to this vignette: [Using proteus R package: label-free data](http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html)
 
 ##### Volcano plots
 
