@@ -177,10 +177,13 @@ Paste the original proteins, prey proteins, AvgP, and BFDR for each timepoint in
 
 ## Proteus
 
-https://www.biorxiv.org/content/10.1101/416511v2
+Proteus is an R package for downstream analysis of MaxQuant output. Proteus offers many visualisation and data analysis tools and allows simple differential expression using limma.
 
-https://github.com/bartongroup/Proteus
-http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html
+The code for Proteus is available at https://github.com/bartongroup/Proteus.
+
+The paper describing Proteus can be found at https://www.biorxiv.org/content/10.1101/416511v2.
+
+An in-depth tutorial that demonstrates how to analyse data using Proteus is found here: http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html
 
 ### Installation
 
@@ -193,6 +196,35 @@ BiocManager::install("limma")
 install.packages("devtools")
 devtools::install_github("bartongroup/Proteus", build_opts= c("--no-resave-data", "--no-manual"), build_vignettes=FALSE)
 </pre>
+
+### Prepare input files
+
+#### Intensity input file
+
+Proteus can directly read in MaxQuant proteinGroups.txt file. To prepare this file, we can use the output file from process_maxquant.py called *all_norm_rand.xlsx*. We are using this file, which doesn't contain any 0's, to obtain differential expression results. Otherwise, if the file contained 0's, any protein hits with 0's across all replicates in either the control group or experimental group will not output any result such as the p-values.
+
+Proteus expects three columns from the proteinGroups.txt file:
+* Majority protein IDs
+* Reverse
+* Potential contaminant
+
+Using excel, we can add columns for "Reverse" and "Potential contaminant" as shown in the example below:
+
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/proteus_input.PNG">
+
+*Note: Sort the column "Majority protein IDs" to prevent misalignment of the intensity data when using Proteus' interactive tools such as plotVolcano_life.*
+
+Save the file in the Text (Tab delimited) format in excel.
+
+#### Metadata file
+
+A metadata file describing the design of the experiment is also needed. It should be like the example below:
+
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/proteus_meta.PNG">
+
+Save the file in the Text (Tab delimited) format in excel.
+
+An example of the metadata file, *PolyIC_meta.txt*, is included in the folder, *example_files*. 
 
 ### Running Proteus
 
@@ -217,7 +249,7 @@ new_measure_cols <- setNames(paste("",meta$sample,"",sep=""),meta$sample)
 <pre>
 # path to proteinGroups file
 proteinGroupsFile <- "LPS_norm_intensity.txt"
-# read in proteinGroups file
+# read in proteinGroups file to create proteusData object
 prot_data <-readProteinGroups(proteinGroupsFile, meta, measure.cols=new_measure_cols)
 </pre>
 
@@ -239,7 +271,7 @@ write.table(L_all, file="LPS_proteus_stats.txt",sep="\t", row.names=TRUE)
 
 #### Other useful commands for analysis
 
-For more information on others commands and example output, please refer to this vignette: [Using proteus R package: label-free data](http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html)
+For more information on others commands and example output, please refer to this tutorial: [Using proteus R package: label-free data](http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html).
 
 ##### Volcano plots
 
@@ -294,3 +326,7 @@ prot_data <- annotateProteins(prot_data, annotations.id)
 <pre>
 plotVolcano_live(prot_data, L_10)
 </pre>
+
+Example:
+
+<img src="https://github.com/jonessarae/proteomic_tutorials/blob/master/images/plot_volcano.PNG">
