@@ -193,3 +193,104 @@ BiocManager::install("limma")
 install.packages("devtools")
 devtools::install_github("bartongroup/Proteus", build_opts= c("--no-resave-data", "--no-manual"), build_vignettes=FALSE)
 </pre>
+
+### Running Proteus
+
+#### Load Proteus 
+<pre>
+library(proteus)
+</pre>
+
+#### Read in meta file
+
+<pre>
+# path to meta file
+metadataFile <- "LPS_meta.txt"
+# read in meta file
+meta <- read.delim(metadataFile, header=TRUE, sep="\t")
+# create list with names corresponding to sample names in the intensity file
+new_measure_cols <- setNames(paste("",meta$sample,"",sep=""),meta$sample)
+</pre>
+
+#### Read in proteinGroups file
+
+<pre>
+# path to proteinGroups file
+proteinGroupsFile <- "LPS_norm_intensity.txt"
+# read in proteinGroups file
+prot_data <-readProteinGroups(proteinGroupsFile, meta, measure.cols=new_measure_cols)
+</pre>
+
+#### Differential Expression
+
+Intensity data are log2 transformed using the transform.fun function (a parameter of limmaDE) before applying limma to do differential expression between the control and experiment for each timepoint.  
+
+<pre>
+L_0 <- limmaDE(prot_data, sig.level=0.05, transform.fun = log2, conditions=c("LC_0","LM_0"))
+L_10 <- limmaDE(prot_data, sig.level=0.05, transform.fun = log2, conditions=c("LC_10","LM_10"))
+L_30 <- limmaDE(prot_data, sig.level=0.05, transform.fun = log2, conditions=c("LC_30","LM_30"))
+L_60 <- limmaDE(prot_data, sig.level=0.05, transform.fun = log2, conditions=c("LC_60","LM_60"))
+L_120 <- limmaDE(prot_data, sig.level=0.05, transform.fun = log2, conditions=c("LC_120","LM_120"))
+# combine results for each timepoint
+L_all <- cbind(L_0, L_10, L_30, L_60, L_120)
+# save to a file
+write.table(L_all, file="LPS_proteus_stats.txt",sep="\t", row.names=TRUE)
+</pre>
+
+#### Other useful commands for analysis
+
+For more information on others commands and example output, please refer to this vignette: [Using proteus R package: label-free data] (http://www.compbio.dundee.ac.uk/user/mgierlinski/proteus/proteus.html)
+
+##### Volcano plots
+
+<pre>
+plotVolcano(L_10)
+</pre>
+
+##### Dendograms
+
+<pre>
+plotClustering(prot_data)
+</pre>
+
+##### Heatmaps
+
+<pre>
+plotDistanceMatrix(prot_data)
+</pre>
+
+##### Normalization
+
+<pre>
+# median normalization
+prodat.med <- normalizeData(prot_data)
+</pre>
+
+##### Violin plots of sample distributions
+
+<pre>
+plotSampleDistributions(prot_data, title="Not normalized", fill="condition", method="violin")
+</pre>
+
+##### Annotation
+
+<pre>
+# dataframe of UniProt IDs
+ids <- as.data.frame(prot_data$proteins)
+# add column name to dataframe
+names(ids) <-"protein"
+# fetch basic annotations (gene names and protein names) from UniProt
+annotations <- fetchFromUniProt(ids, verbose=TRUE)
+# merge the two dataframes
+annotations.id <- merge(ids, annotations, by.x="protein", by.y="id")
+# keep only unique IDs
+annotations.id <- unique(annotations.id)
+# add annotations to proteus object
+prot_data <- annotateProteins(prot_data, annotations.id)
+</pre>
+
+##### Interactive plots
+
+<pre>
+plotVolcano_live(prot_data, L_10)
+</pre>
