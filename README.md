@@ -321,6 +321,7 @@ annotations.id <- unique(annotations.id)
 prot_data <- annotateProteins(prot_data, annotations.id)
 </pre>
 
+* Note that if there's more than one UniProt ID in a cell, no annotation will be provided. You will need to edit the cell to contain just one UniProt ID. * 
 ##### Interactive plots
 
 <pre>
