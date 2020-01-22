@@ -167,6 +167,12 @@ Save this file as a Text (Tab delimited) in excel.
 ./saintq_v0.0.4.exe param_prot_level.txt
 </pre>
 
+or in Windows Command Prompt
+
+<pre>
+saintq_v0.0.4.exe param_prot_level.txt
+</pre>
+
 The output file is a tab-separated value (TSV) file that starts with *scores_list*. It contains the probability score, AvgP, and the Bayesian false discovery rate, BFDR, for each bait-prey interaction. 
 
 ### Post-processing
