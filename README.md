@@ -318,7 +318,7 @@ ids <- as.data.frame(prot_data$proteins)
 # add column name to dataframe
 names(ids) <-"protein"
 # fetch basic annotations (gene names and protein names) from UniProt
-annotations <- fetchFromUniProt(ids, verbose=TRUE)
+annotations <- fetchFromUniProt(ids$protein, verbose=TRUE)
 # merge the two dataframes
 annotations.id <- merge(ids, annotations, by.x="protein", by.y="id")
 # keep only unique IDs
